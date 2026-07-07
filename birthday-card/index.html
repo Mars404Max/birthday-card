@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Birthday Card</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="hint" id="hint">Нажми на конверт ✨</div>
+
+  <main class="scene">
+    <section class="envelope" id="envelope" role="button" tabindex="0">
+      <div class="letter">
+        <h1>С Днём Рождения!</h1>
+
+        <div class="photo-row">
+          <div class="photo-holder">
+            <img
+              src="assets/onyx.jpg"
+              alt="Кот Оникс"
+              class="pet-photo cat-photo"
+            />
+          </div>
+
+          <div class="photo-holder rat-holder hidden-rat" id="ratHolder">
+            <img
+              src="assets/rat.jpg"
+              alt="Крыса special guest"
+              class="pet-photo rat-photo"
+            />
+          </div>
+        </div>
+
+        <p>
+          Оникс поздравляет тебя с днём рождения это он написал эту программу.
+        </p>
+
+        <p class="small-text">
+          Пусть день будет Мяу мяу мяу мяу мяу мяу мяу
+        </p>
+
+        <div class="signature">
+          Мяу мяу мяу мяу мяу мяу мяу 🐾
+        </div>
+      </div>
+
+      <div class="flap"></div>
+
+      <div class="pocket">
+        <span>💌</span>
+      </div>
+    </section>
+  </main>
+      <div class="rave-guests" id="raveGuests">
+  <img
+    src="assets/oiiai.gif"
+    alt="Oiiai dancing cat"
+    class="guest-img oiiai-gif"
+  />
+
+  <img
+    src="assets/hamster.jpg"
+    alt="Хомяк с сумочкой"
+    class="guest-img hamster-img"
+  />
+
+  <img
+    src="assets/rat.jpg"
+    alt="Крыса birthday rave guest"
+    class="guest-img rat-guest-img"
+  />
+</div>
+  <button class="music-btn" id="musicBtn" type="button">
+    Включить hard techno 🔊
+  </button>
+
+  <audio id="music" loop preload="auto">
+    <source src="assets/hard-techno.mp3" type="audio/mpeg" />
+  </audio>
+</body>
+</html>
