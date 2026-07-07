@@ -30,7 +30,7 @@ function openCard() {
 
   opened = true;
 
-  hint.textContent = "Birthday money rave activated 💸⚡";
+  hint.classList.add("hide");
   musicBtn.textContent = "Выключить hard techno 🔇";
 
   startMusic();
